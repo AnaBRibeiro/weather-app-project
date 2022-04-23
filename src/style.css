@@ -1,0 +1,47 @@
+body {
+  background-color: #f9f7fe;
+}
+
+.app-title {
+  color: #272142;
+}
+
+.all-content {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.app-content {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
+  margin: 60px auto 30px auto;
+  max-width: 800px;
+  padding: 40px;
+}
+
+.btn-primary {
+  background: #885df1;
+  border: none;
+}
+
+.current-weather-info {
+  color: #272142;
+}
+
+.current-weather-secondary-info {
+  color: #a9a6b3;
+}
+
+.value-current-weather-secondary-info {
+  color: #f65282;
+}
+
+.signature {
+  color: #a9a6b3;
+}
+
+.signature-link {
+  color: #885df1;
+  text-decoration: none;
+}

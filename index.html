@@ -17,7 +17,7 @@
     <div class="container">
       <div class="all-content">
         <div class="app-content">
-          <h1>World Weather</h1>
+          <h1 class="app-title">World Weather</h1>
           <form>
             <div class="row">
               <div class="col-9">
@@ -28,7 +28,11 @@
                 />
               </div>
               <div class="col-3">
-                <button class="btn btn-primary mb-3" type="submit">
+                <button
+                  class="btn btn-primary mb-3"
+                  type="submit"
+                  value="Search"
+                >
                   Search
                 </button>
               </div>
@@ -38,19 +42,30 @@
             <div class="row">
               <div class="col-6">
                 <h2>New York</h2>
-                <p>Thursday, 09:06</p>
-                <ul>
-                  <li>Clear sky</li>
-                  <li>Humidity: 79 %, Wind speed: 3 Km/h</li>
-                </ul>
+                <div class="current-weather-secondary-info">
+                  <p>Thursday, 09:06</p>
+                  <ul>
+                    <li>Clear sky</li>
+                    <li>
+                      Humidity:
+                      <span class="value-current-weather-secondary-info"
+                        >79 %</span
+                      >, Wind speed:
+                      <span class="value-current-weather-secondary-info"
+                        >3 Km/h</span
+                      >
+                    </li>
+                  </ul>
+                </div>
               </div>
               <div class="col-6">☀ 7 ºC | ºF</div>
             </div>
           </div>
         </div>
-        <small
+        <small class="signature"
           >This project was coded by Ana Ribeiro and it is
           <a
+            class="signature-link"
             href="https://github.com/AnaBRibeiro/weather-app-project"
             target="_blank"
             >open-sourced on GitHub</a
