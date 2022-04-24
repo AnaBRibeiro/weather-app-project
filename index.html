@@ -18,47 +18,50 @@
       <div class="all-content">
         <div class="app-content">
           <h1 class="app-title">World Weather</h1>
-          <form>
-            <div class="row">
-              <div class="col-9">
-                <input
-                  class="form-control"
-                  type="search"
-                  placeholder="Enter a city..."
-                />
+          <div class="search-engine">
+            <form>
+              <div class="row">
+                <div class="col-9 input-city">
+                  <input
+                    class="form-control"
+                    type="search"
+                    placeholder="Enter a city..."
+                  />
+                </div>
+                <div class="col-3">
+                  <button
+                    class="btn btn-primary mb-3"
+                    type="submit"
+                    value="Search"
+                  >
+                    Search
+                  </button>
+                </div>
               </div>
-              <div class="col-3">
-                <button
-                  class="btn btn-primary mb-3"
-                  type="submit"
-                  value="Search"
-                >
-                  Search
-                </button>
-              </div>
-            </div>
-          </form>
-          <div class="current-weather-info">
+            </form>
+          </div>
+          <div>
             <div class="row">
-              <div class="col-6">
-                <h2>New York</h2>
-                <div class="current-weather-secondary-info">
+              <div class="col-8">
+                <h2 class="city-name">New York</h2>
+                <div class="weather-secondary-info">
                   <p>Thursday, 09:06</p>
-                  <ul>
+                  <ul class="list-weather-secondary-info">
                     <li>Clear sky</li>
                     <li>
                       Humidity:
-                      <span class="value-current-weather-secondary-info"
-                        >79 %</span
-                      >, Wind speed:
-                      <span class="value-current-weather-secondary-info"
-                        >3 Km/h</span
-                      >
+                      <span class="value-weather-secondary-info">79 %</span>,
+                      Wind speed:
+                      <span class="value-weather-secondary-info">3 Km/h</span>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="col-6">☀ 7 ºC | ºF</div>
+              <div class="col-4 container-weather-primary-info">
+                <span class="weather-icon">☁</span>
+                <span class="temperature-value">7</span>
+                <span class="temperature-unit-conversion">ºC | ºF</span>
+              </div>
             </div>
           </div>
         </div>
