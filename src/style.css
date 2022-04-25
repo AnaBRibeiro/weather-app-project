@@ -59,6 +59,10 @@ body {
   width: 100%;
 }
 
+.container-weather-secondary-info {
+  padding: 0 0 0 12px;
+}
+
 .city-name {
   color: #272142;
   font-size: 38px;
@@ -68,7 +72,7 @@ body {
 }
 
 .container-weather-primary-info {
-  padding: 0 0 0 20px;
+  padding: 0;
 }
 
 .weather-icon {
@@ -78,10 +82,10 @@ body {
   margin: 0 10px 0 0;
 }
 
-.temperature-value {
+.value-temperature {
   color: #272142;
   font-size: 80px;
-  font-weight: 700;
+  font-weight: 650;
   margin: 0 5px 0 0;
 }
 
@@ -100,6 +104,10 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.list-weather-secondary-info:first-letter {
+  text-transform: capitalize;
 }
 
 .value-weather-secondary-info {
