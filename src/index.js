@@ -44,6 +44,15 @@ function displayData(response) {
   );
   weatherWindSpeedElement.innerHTML = Math.round(response.data.wind.speed);
 
+  let weatherIcon = response.data.weather[0].icon;
+  let weatherIconDescription = response.data.weather[0].description;
+  let weatherIconElement = document.querySelector("#weather-icon");
+  weatherIconElement.setAttribute(
+    "src",
+    `https://openweathermap.org/img/wn/${weatherIcon}@2x.png`
+  );
+  weatherIconElement.setAttribute("alt", weatherIconDescription);
+
   celsiusTemperature = Math.round(response.data.main.temp);
 
   let temperatureElement = document.querySelector("#value-temperature");
