@@ -49,6 +49,10 @@ body {
   background-color: rgba(136, 93, 241, 0.4);
 }
 
+.btn-primary:focus {
+  background-color: #885df1;
+}
+
 .btn-primary {
   background: #885df1;
   border: none;
