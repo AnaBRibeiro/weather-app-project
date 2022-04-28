@@ -57,6 +57,8 @@ function displayData(response) {
 
   let temperatureElement = document.querySelector("#value-temperature");
   temperatureElement.innerHTML = celsiusTemperature;
+
+  displayCelsiusTemperature();
 }
 
 function makeApiCall(city) {
@@ -84,8 +86,7 @@ function displayFahrenheitTemperature(event) {
   temperatureElement.innerHTML = fahreinheitTemperature;
 }
 
-function displayCelsiusTemperature(event) {
-  event.preventDefault();
+function displayCelsiusTemperature() {
   let temperatureElement = document.querySelector("#value-temperature");
   celsiusLinkElement.classList.remove("unit-conversion-link-fahreinheit");
   celsiusLinkElement.classList.add("unit-conversion-link-celsius");
